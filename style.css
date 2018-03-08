@@ -2,17 +2,33 @@ body, html {
     margin: 0;
     padding: 0;
     background-color: #fff;
-    color: #444452;
-    font-family: Apercu, "Source Sans Pro", Helvetica, Arial, sans-serif;
+    color:  #f04;
+/*    font-family: Apercu, "Source Sans Pro", Helvetica, Arial, sans-serif;*/
     line-height: 1.5;
     height: 100%;
     
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-family: 'Avenir-Light', sans-serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  background-color: #ddd;
+  line-height: 100px;
+  font-size: 20px;
+  z-index: 1000;
 }
 
 p.lead {
     text-align: center;
     color: #727878;
 }
+
 .macbook {
 	background: url(pexels.jpeg);
 
@@ -30,32 +46,23 @@ p.lead {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-transform: translateZ(-999px);
-    transform: translateZ(-999px);
-    z-index: 3;
-	
-/*
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale')";
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale');
-*/
+/*    background-size: cover;*/
 	
 	margin-bottom: 0px;
 	padding: 0px;
 }
 
-.macbook .overlay { background-color: #000000; position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; opacity: 0.60; filter:alpha(opacity=60); z-index: 2; }
-
-/*
-.overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,255,.7);
+.macbook .overlay { background-color: #000000; 
+    position: absolute; 
+    top: 0px; 
+    bottom: 0px; 
+    left: 0px; 
+    right: 0px; 
+    opacity: 0.60; 
+    filter:alpha(opacity=60); 
+    z-index: 2; 
 }
-*/
+
 
 .background-white {
     background: #fff;
@@ -64,27 +71,15 @@ p.lead {
 .container {
     max-width: 1280px;
     padding: 40px 180px;
+    font-family: 'Avenir-Light', sans-serif;
 }
 
 #profile .row > div { margin-bottom: 20px; }
-a {
-  text-decoration: none;
-  color: #333;
-}
 
-#header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  font-family: 'Avenir-Light', sans-serif;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  text-align: center;
-  width: 100%;
-  background-color: #ddd;
-  line-height: 100px;
-  font-size: 20px;
-  z-index: 1000;
+a {
+    text-decoration: none;
+    color: #f04;
+/*    color: #333;*/
 }
 
 #illustration img {
