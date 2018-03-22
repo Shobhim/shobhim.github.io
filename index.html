@@ -1,25 +1,74 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Shobhi Maheshwari</title>
+        <meta name="description" content="Personal Website">
+		<meta name="keywords" content="Shobhi Maheshwari" />
+		<meta name="author" content="Shobhi Maheshwari" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0;">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <div id="header">
-            <a href="#illustration">Shobhi Maheshwari</a>
-        </div>
-        <div class="macbook" id="top" style="height: 100%;">
-            <div class="overlay"></div>
-        </div>
-        <div class="background-white">
-            <div id="profile" class="container">
-                <h2>Profile</h2>
-                <p class="lead"> I'm a Software Developer</p>
-                <hr>
-                About me<br>
-
-I am an allround web developer. <br>I am a senior programmer with good knowledge<br> of front-end techniques. <br>I love structure and order and<br> I also stand for quality. <br> I love spending time on fixing little details and optimizing web apps. <br>Also I like working in a team, you'll learn faster and much more. <br> As the saying goes: 'two heads are better <br>than one'.
-                <hr>
+<!--
+        <div id="toc-holder" class="toc-holder">
+			<a href="#" class="toc-link" id="toc-link"><span>&#9776;</span></a>
+			<ul id="toc" class="toc">
+				<li class="toc-h1"><a href="#about">About</a></li>
+				<li class="toc-h1"><a href="#resume">Résumé</a></li>
+				<li class="toc-h1"><a href="#work">Work</a></li>
+			</ul>
+		</div>
+-->
+<!--        <div id="page-wrapper">-->
+<!--
+            <div id="header">
+                <a href="#illustration">Shobhi Maheshwari</a>
             </div>
-        </div>
+-->
+            <div class="macbook" style="height: 100%;" data-position="center center">
+                <div class="blur">
+                </div>
+                <div class="container">
+                    <img src="tempImg.jpg" width="256" height="256" /><br>
+                    <h1>Shobhi Maheshwari</h1>
+                    <p class="lead">Interactive resume</p>
+                </div>
+                <div class="overlay">
+<!--
+                    <div class="resume-image">
+                        <img src="IMG_0990.JPG" width="256" height="256"/>
+                    </div>
+-->
+                </div>
+            </div>
+            <div class="background-white">
+                <div id="profile" class="container">
+                    <h2>Profile</h2>
+                    <p class="lead"> I'm a Software Developer</p>
+                    <hr>
+                    About me<br>
+
+    I am an allround web developer. <br>I am a senior programmer with good knowledge<br> of front-end techniques. <br>I love structure and order and<br> I also stand for quality. <br> I love spending time on fixing little details and optimizing web apps. <br>Also I like working in a team, you'll learn faster and much more. <br> As the saying goes: 'two heads are better <br>than one'.
+                    <hr>
+                </div>
+            </div>
+<!--        </div>-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script src="js/jquery.fixedTOC.js?v=3.0"></script>
+        <script>
+		// call the plugin on the "#toc" element
+		$('#toc').fixedTOC({
+			menuOpens: 'click', // or 'mouseenter'
+			scrollSpeed: 1000,
+			menuSpeed: 300,
+			useSubMenus: false,
+			resetSubMenus: false,
+			topLinkWorks: true
+		});
+		</script>
+        
     </body>
 </html
