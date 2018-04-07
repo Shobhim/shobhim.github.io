@@ -2,7 +2,9 @@ body, html {
     margin: 0;
     padding: 0;
     background-color: #fff;
-    color:  #e01258;
+    color:  #333;
+    font-size: 14px;
+    font-family: 'Karla', sans-serif;
 /*    font-family: Apercu, "Source Sans Pro", Helvetica, Arial, sans-serif;*/
     line-height: 1.5;
     height: 100%;
@@ -138,40 +140,6 @@ p.lead {
 img {
     border-radius: 50%;
 }
-#profile .row > div { margin-bottom: 20px; }
-
-a {
-    text-decoration: none;
-/*    color: #f04;*/
-    color: #333;
-}
-
-#illustration img {
-  padding-top: 150px;
-  width: 50%;
-  min-width:800px;
-}
-
-#illustration p {
-  font-family: "Courier New";
-  letter-spacing: 0.1em;
-  color: #fafafa;
-  padding-top: 60px;
-  font-weight: 100;
-  font-size: 14px;
-}
-
-
-#resume {
-  background-color: #ddd;
-  height: auto;
-  margin-top: -30px;
-  padding-top: 60px;
-/*  //font-family: 'Karla';*/
-  font-size: 19px;
-  line-height: 34px;
-  -webkit-font-smoothing: antialiased;
-}
 
 .macbook .nav-wrapper {
     position: relative;
@@ -193,11 +161,6 @@ a {
     opacity: 0; 
     filter:alpha(opacity=0); 
 */
-}
-
-.fixed {
-    position: fixed;
-    top: 0;
 }
 
 .macbook .nav-wrapper .name {
@@ -242,4 +205,159 @@ a {
     color: #e01258;
     padding-bottom: 30px;
     border-bottom: 5px solid #e01258;
+}
+
+.section {
+  display: block;
+}
+
+.section-content {
+    padding: 100px 100px;
+    display: block;
+    overflow: auto;
+}
+
+.section-content .content > div {
+    padding-left: 20px;
+}
+
+.white-bg > .section-content {
+    background-color: white;
+}
+
+.dark-bg > .section-content{
+  /* background-color: #3295be; */
+    background: #ddd;
+/*
+  background: rgba(80,80,80,1);
+  background: -moz-linear-gradient(top, rgba(80,80,80,1) 0%, rgba(109,107,107,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(80,80,80,1)), color-stop(100%, rgba(109,107,107,1)));
+  background: -webkit-linear-gradient(top, rgba(80,80,80,1) 0%, rgba(109,107,107,1) 100%);
+  background: -o-linear-gradient(top, rgba(80,80,80,1) 0%, rgba(109,107,107,1) 100%);
+  background: -ms-linear-gradient(top, rgba(80,80,80,1) 0%, rgba(109,107,107,1) 100%);
+  background: linear-gradient(to bottom, rgba(80,80,80,1) 0%, rgba(109,107,107,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#505050', endColorstr='#6d6b6b', GradientType=0 );
+*/
+}
+
+
+.content p {
+    margin: 0;
+    font-size: 18px;
+    color: white;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.title > h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+
+.white-bg .title h1 {
+    color: #e01258;
+}
+
+.dark-bg .title h1 {
+    color: #333;
+}
+
+.white-bg p, .white-bg h2 {
+    color: black;
+}
+
+.title h1:after {
+    content: ' ';
+    display: block;
+    width: 50px;
+    margin: 10px 0;
+        
+}
+
+.dark-bg .title > h1:after {
+    border: 2px solid #333;
+}
+
+.white-bg .title > h1:after {
+    border: 2px solid #e01258;
+}
+
+.title {
+    float: left;
+    width: 20%;
+}
+
+.content {
+    float: left;
+    width: 80%;
+}
+
+.dark-bg h4 {
+    color: white;
+    text-transform: none;
+}
+
+.dark-bg p {
+    color: #deeef5;
+}
+
+.section-tagline {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.3em;
+    font-weight: 700;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #CEC8C8;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.resume-section {
+    float: left;
+    width: 80%;    
+    color: #333;
+    font-weight: 700;
+}
+
+p.resume-content{
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    color: #333;
+}
+
+.right {
+    float: right;
+}
+
+img.icon {
+  width: 65px;
+  height: 65px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius:50%;
+  float: left;
+  display: block;
+  margin-left: -95px;
+  margin-top: 5px;
+  background-color: #fff;
+  opacity: 0.8;
+  z-index: 0;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);   /*For Webkit browsers */
+  filter: gray;  /* For IE 6 - 9 */
+  -webkit-transition: all .4s ease;
+}
+
+img.icon:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  filter: none;
 }

@@ -1,6 +1,6 @@
 (function($) {          
     $(document).ready(function(){   
-        var navOffset = jQuery(".background-white").offset().top;
+        var navOffset = jQuery(".background1").offset().top;
 //        alert(navOffset);
         $(window).scroll(function(){                          
             if ($(this).scrollTop() > navOffset) {
