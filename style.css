@@ -63,7 +63,7 @@ body, html {
 }
 
 .header a:hover {
-/*    color: #f04;*/
+    color: #f04;
     padding-bottom: 28px;
     border-bottom: 5px solid #f04;
 }
