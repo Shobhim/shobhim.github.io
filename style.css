@@ -2,7 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     background-color: #fff;
-    color:  #f04;
+    color:  #e01258;
 /*    font-family: Apercu, "Source Sans Pro", Helvetica, Arial, sans-serif;*/
     line-height: 1.5;
     height: 100%;
@@ -63,9 +63,9 @@ body, html {
 }
 
 .header a:hover {
-    color: #f04;
+/*    color: #f04;*/
     padding-bottom: 28px;
-    border-bottom: 5px solid #f04;
+    border-bottom: 5px solid #e01258;
 }
 
 p.lead {
@@ -108,8 +108,8 @@ p.lead {
     z-index: 2; 
 }
 
-.background-white {
-    background: #fff;
+.background1 {
+    background: #eee;
 }
 
 .macbook .container { 
@@ -127,7 +127,7 @@ p.lead {
 .macbook .container h1 { 
     padding-bottom: 20px; 
     border-bottom: 1px solid #fff; 
-    border-bottom-color: #f04; 
+    border-bottom-color: #e01258; 
     display: inline-block; 
 }
 
@@ -212,7 +212,7 @@ a {
 }
 
 .macbook .nav-wrapper .name .lastname {
-    color: #f04;
+    color: #e01258;
 }
 .macbook .nav-wrapper .name a {
     color: white;
@@ -239,7 +239,7 @@ a {
 }
 
 .macbook .nav-wrapper a:hover {
-    color: #f04;
+    color: #e01258;
     padding-bottom: 30px;
-    border-bottom: 5px solid #f04;
+    border-bottom: 5px solid #e01258;
 }
