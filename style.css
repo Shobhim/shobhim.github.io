@@ -180,10 +180,15 @@ img {
 .fixed-header a {
     color: black;
     text-decoration: none;
-    padding: 30px;
+    padding: 28px;
 }
 
 .fixed-header a:hover {
+    padding-bottom: 28px;
+    border-bottom: 5px solid #e01258;
+}
+
+.active {
     padding-bottom: 28px;
     border-bottom: 5px solid #e01258;
 }
