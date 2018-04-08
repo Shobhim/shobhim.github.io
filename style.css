@@ -143,13 +143,13 @@ img {
     padding-top: 1%;
     line-height: 60px;
     font-size: 15px;
-    z-index: 1000;
+    z-index: -2;
     padding-right: 5%;
     margin-right: 50px;
     border-bottom-width:1px;
     border-bottom-color: #eae5e5;
     border-bottom-style: solid;
-    opacity: 0;
+/*    opacity: 0;*/
 }
 
 .fixed-header .name {
