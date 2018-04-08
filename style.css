@@ -4,75 +4,11 @@ body, html {
     background-color: #fff;
     color:  #333;
     font-size: 14px;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 /*    font-family: Apercu, "Source Sans Pro", Helvetica, Arial, sans-serif;*/
     line-height: 1.5;
     height: 100%;
     
-}
-
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    font-family: 'Open Sans', sans-serif;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    text-align: right;
-    width: 100%;
-    background-color: #fff;
-    padding-top: 1%;
-    line-height: 60px;
-    font-size: 15px;
-    z-index: 1000;
-    padding-right: 5%;
-    margin-right: 50px;
-    border-bottom-width:1px;
-    border-bottom-color: #eae5e5;
-    border-bottom-style: solid;
-    opacity: 0;
-}
-
-.header .name {
-    text-align: left;
-    padding-left: 5%;
-    float: left;
-    font-size: 20px;
-}
-
-.header .name a {
-    color: black;
-    text-decoration: none;
-    padding: 15px;
-}
-
-.header .name a:hover {
-    color: black;
-    border-bottom: none;
-}
-
-
-.header ul li {
-    list-style: none;
-    display: inline;
-    z-index: 10;
-}
-
-.header a {
-    color: black;
-    text-decoration: none;
-    padding: 15px;
-}
-
-.header a:hover {
-/*    color: #f04;*/
-    padding-bottom: 28px;
-    border-bottom: 5px solid #e01258;
-}
-
-p.lead {
-    text-align: center;
-    color: #727878;
 }
 
 .macbook {
@@ -92,8 +28,6 @@ p.lead {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-/*    background-size: cover;*/
-	
 	margin-bottom: 0px;
 	padding: 0px;
 }
@@ -108,10 +42,6 @@ p.lead {
     opacity: 0.85; 
     filter:alpha(opacity=85); 
     z-index: 2; 
-}
-
-.background1 {
-    background: #eee;
 }
 
 .macbook .container { 
@@ -145,22 +75,15 @@ img {
     position: relative;
     top: 2%;
     left: 0;
-    font-family: 'Open Sans', sans-serif ;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     text-align: right;
     padding-right: 5%;
-/*    padding-top: 1%;*/
     margin-right: 50px;
     width: 100%;
     line-height: 80px;
     font-size: 15px;
     z-index: 100;
-/*    background-color: #fff;*/
-/*
-    opacity: 0; 
-    filter:alpha(opacity=0); 
-*/
 }
 
 .macbook .nav-wrapper .name {
@@ -207,6 +130,64 @@ img {
     border-bottom: 5px solid #e01258;
 }
 
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: right;
+    width: 100%;
+    background-color: #fff;
+    padding-top: 1%;
+    line-height: 60px;
+    font-size: 15px;
+    z-index: 1000;
+    padding-right: 5%;
+    margin-right: 50px;
+    border-bottom-width:1px;
+    border-bottom-color: #eae5e5;
+    border-bottom-style: solid;
+    opacity: 0;
+}
+
+.fixed-header .name {
+    text-align: left;
+    padding-left: 5%;
+    float: left;
+    font-size: 20px;
+}
+
+.fixed-header .name a {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.fixed-header .name a:hover {
+    color: black;
+    border-bottom: none;
+}
+
+
+.fixed-header ul li {
+    list-style: none;
+    display: inline;
+    z-index: 10;
+}
+
+.fixed-header a {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.fixed-header a:hover {
+    padding-bottom: 28px;
+    border-bottom: 5px solid #e01258;
+}
+
 .section {
   display: block;
 }
@@ -226,18 +207,7 @@ img {
 }
 
 .dark-bg > .section-content{
-  /* background-color: #3295be; */
     background: #ddd;
-/*
-  background: rgba(80,80,80,1);
-  background: -moz-linear-gradient(top, rgba(80,80,80,1) 0%, rgba(109,107,107,1) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(80,80,80,1)), color-stop(100%, rgba(109,107,107,1)));
-  background: -webkit-linear-gradient(top, rgba(80,80,80,1) 0%, rgba(109,107,107,1) 100%);
-  background: -o-linear-gradient(top, rgba(80,80,80,1) 0%, rgba(109,107,107,1) 100%);
-  background: -ms-linear-gradient(top, rgba(80,80,80,1) 0%, rgba(109,107,107,1) 100%);
-  background: linear-gradient(to bottom, rgba(80,80,80,1) 0%, rgba(109,107,107,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#505050', endColorstr='#6d6b6b', GradientType=0 );
-*/
 }
 
 
@@ -305,15 +275,34 @@ img {
 
 .section-tagline {
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.1em;
     font-weight: 700;
     padding-bottom: 20px;
     margin-bottom: 40px;
     border-bottom: 1px solid #CEC8C8;
-    font-size: 11px;
+    font-size: 15px;
     text-transform: uppercase;
     color: #333;
+    text-align: left;
+}
+
+#resume {
+    background-color: #ddd;
+    height: auto;
+    margin-top: -30px;
+    padding-top: 60px;
+    font-size: 19px;
+    line-height: 34px;
+    -webkit-font-smoothing: antialiased;
+}
+
+#resume .inner {
+    width: 700px;
+}
+
+.inner {
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
 .resume-section {
@@ -325,7 +314,6 @@ img {
 
 p.resume-content{
     text-align: left;
-    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     letter-spacing: 0.1em;
     color: #333;
@@ -333,6 +321,21 @@ p.resume-content{
 
 .right {
     float: right;
+    font-size: 15px;
+    font-weight: 500; 
+    -webkit-font-smoothing: antialiased;
+}
+
+.course {
+    font-size: 18px; 
+    font-weight: 600; 
+    -webkit-font-smoothing: antialiased;
+}
+
+.description {
+    font-size: 15px;
+    font-weight: 500; 
+    -webkit-font-smoothing: antialiased;
 }
 
 img.icon {

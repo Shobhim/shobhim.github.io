@@ -4,11 +4,11 @@
 //        alert(navOffset);
         $(window).scroll(function(){                          
             if ($(this).scrollTop() > navOffset) {
-                $('.header').css("opacity","1");
-                $('.header').fadeIn(300);
+                $('.fixed-header').css("opacity","1");
+                $('.fixed-header').fadeIn(300);
             } else {
-                $('.header').css("opacity","0");
-                $('.header').fadeOut(300);
+                $('.fixed-header').css("opacity","0");
+                $('.fixed-header').fadeOut(300);
             }       
             
 //            $('.header').each(function() {
