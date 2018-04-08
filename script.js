@@ -1,6 +1,6 @@
 (function($) {          
     $(document).ready(function(){   
-        var navOffset = jQuery(".background1").offset().top;
+        var navOffset = jQuery(".background1").offset().top - 2;
         $(window).scroll(function(){                          
             if ($(this).scrollTop() > navOffset) {
                 $('.fixed-header').css("z-index","2");
@@ -11,3 +11,4 @@
         });
     });
 })(jQuery);
+

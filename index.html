@@ -11,21 +11,21 @@
         <link rel="stylesheet" type="text/css" href="animate.css">
 <!--        <script type="text/javascript" src="jquery-3.3.1.min.js"></script>-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script type="text/javascript" src="script.js"></script>        
+        <script type="text/javascript" src="script.js"></script>
 <!--        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
     </head>
     <body>
+        <div id="home"></div>
         <div class="macbook" style="height: 100%;" data-position="center center">
             <div class="nav-wrapper"> 
                 <div class="name">
-                    <a href="#"><span style="letter-spacing: 0.2em">Shobhi</span><span style="color: #e01258; font-weight: 600; letter-spacing: 0.2em">Maheshwari</span></a>
+                    <a href="#home"><span style="letter-spacing: 0.2em">Shobhi</span><span style="color: #e01258; font-weight: 600; letter-spacing: 0.2em">Maheshwari</span></a>
                 </div>
                 <ul>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Experience</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact Me</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             <div class="container">
@@ -39,17 +39,17 @@
         
         
 <!--        About section-->
+        <div id="about"></div>
         <div class="background1">
             <div class="fixed-header">
                 <div class="name">
-                    <a href="#"><span style="letter-spacing: 0.2em">Shobhi</span><span style="color: #e01258; font-weight: 600; letter-spacing: 0.2em">Maheshwari</span></a>
+                    <a href="#home"><span style="letter-spacing: 0.2em">Shobhi</span><span style="color: #e01258; font-weight: 600; letter-spacing: 0.2em">Maheshwari</span></a>
                 </div>
                 <ul>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Experience</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact Me</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             <div class="section white-bg">
@@ -58,13 +58,11 @@
                         <h1>About</h1>
                     </div>
                     <div class="content">
-                        <div>
-                            <p>
-                                I am a second year graduate student working on improving the Quality of Service of live video applications, like social media broadcasting and video calling, to make them a more reliable and enjoyable experience.
-                                <br/><br/>
-                                My areas of interest include Computer Networks and Software Development, I am also interested in Machine Learning and Computer Vision. I am currently seeking full time opportunities.
-                            </p>
-                        </div>
+                        <p>
+                            I am a second year graduate student working on improving the Quality of Service of live video applications, like social media broadcasting and video calling, to make them a more reliable and enjoyable experience.
+                            <br/><br/>
+                            My areas of interest include Computer Networks and Software Development, I am also interested in Machine Learning and Computer Vision. I am currently seeking full time opportunities.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -72,6 +70,7 @@
         
         
 <!--        Resume Section-->
+        <div id="resume"></div>
         <div class="section dark-bg">
             <div class="section-content wow fadeInUp">
                 <div class="title">
@@ -170,6 +169,7 @@
         
 
 <!--        Projects Section-->
+        <div id="projects"></div>
         <div class="section light-bg">
             <div class="section-content wow fadeInUp">
                 <div class="title">
@@ -231,5 +231,25 @@
                 </div>
             </div>
         </div>
+        
+<!--        Contact section-->
+        <div id="contact"></div>
     </body>
+    <script>
+        $(document).ready(function(){
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 300, function(){
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
 </html
