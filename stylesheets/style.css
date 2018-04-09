@@ -483,3 +483,113 @@ footer ul li a.icon {
     margin-left: auto;
     margin-right: auto;
 }
+
+/*
+@media only screen and (max-width: 767px) {
+	.title, .content {
+	  width: 100%;
+	}
+
+  .section-content .content > div {
+    padding-left: 0;
+  }
+
+  .section-content {
+    padding: 60px 30px;
+  }
+
+  .title img {
+    margin-bottom: 20px;
+  }
+
+  .w3-progress-container {
+    width: 100%;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .main-section h1 {
+    font-size: 40px;
+  }
+
+  .main-section {
+    height: 670px;
+  }
+
+  .main-section > .section-content {
+    padding: 10px 30px;
+  }
+
+  .dual-col img {
+    width: 100%;
+  }
+
+  .nav {
+    left: 30px;
+  }
+
+
+  .dual-col.img-col:nth-child(7) {
+    margin-bottom: 60px;
+  }
+}*/
+
+@media only screen and (max-width: 480px) {
+    
+    .macbook .nav-wrapper {
+        margin-right: 5px;
+        line-height: 40px;
+        font-size: 8px;
+    }
+
+    .macbook .nav-wrapper .name {
+        padding-left: 2%;
+        font-size: 8px;
+    }
+
+    .macbook .nav-wrapper .name a {
+        padding: 5px;
+    }
+
+    .macbook .nav-wrapper a {
+        padding: 5px;
+    }
+
+    .macbook .nav-wrapper a:hover {
+        padding-bottom: 10px;
+        border-bottom: 3px solid #e01258;
+    }
+    
+    
+    .fixed-header {
+        line-height: 25px;
+        font-size: 8px;
+        margin-right: 5px;
+    }
+
+    .fixed-header .name {
+        padding-left: 2%;
+        font-size: 8px;
+    }
+
+    .fixed-header .name a {
+        padding: 5px;
+    }
+
+    .fixed-header a {
+        padding: 3px;
+    }
+
+    .fixed-header a:hover {
+        padding-bottom: 16px;
+        border-bottom: 3px solid #e01258;
+    }
+
+    .active {
+        padding-bottom: 16px;
+        border-bottom: 3px solid #e01258;
+    }
+
+}
