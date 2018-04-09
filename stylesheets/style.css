@@ -67,8 +67,9 @@ body, html {
     font-size: 28px; 
 }
 
-img {
+img.profile-picture {
     border-radius: 50%;
+    width: 256px;
 }
 
 .macbook .nav-wrapper {
@@ -227,6 +228,7 @@ img {
     letter-spacing: 1px;
     padding-right: 5%;
     text-align: justify;
+    -webkit-font-smoothing: antialiased;
 }
 
 .title > h1 {
@@ -453,12 +455,6 @@ footer ul li {
     display: inline-block;
 }
 
-/*
-footer ul li {
-    margin: 1rem .5rem;
-}
-*/
-
 footer ul li a {
     display: block;
     width: 3.5rem;
@@ -538,6 +534,10 @@ footer ul li a.icon {
 
 @media only screen and (max-width: 480px) {
     
+    body, html {
+        font-size: 13px;
+    }
+    
     .macbook .nav-wrapper {
         margin-right: 5px;
         line-height: 40px;
@@ -590,6 +590,117 @@ footer ul li a.icon {
     .active {
         padding-bottom: 16px;
         border-bottom: 3px solid #e01258;
+    }
+    
+    img.profile-picture {
+        width: 128px;
+    }
+    
+    h1.intro {
+        font-size: 15px;
+    }
+    
+    .section-content {
+        padding: 50px 30px;
+    }
+    
+    .title {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .content {
+        width: 100%;
+    }
+    
+    .content p {
+        font-size: 13px;
+        color: black;
+        line-height: 25px;
+    }
+
+    .white-bg .title > h1:after {
+        border: 1px solid #e01258;
+    }
+    
+    .dark-bg .title > h1:after {
+        border: 1px solid #333;
+    }
+    
+    .light-bg .title > h1:after {
+        border: 1px solid #e01258;
+    }
+    
+    .black-bg .title > h1:after {
+        border: 1px solid white;
+    }
+    
+    .title h1:after {
+        width: 30px;
+        margin: 10px 0;
+
+    }
+    
+    .section-tagline {
+        padding-bottom: 15px;
+        margin-bottom: 30px;
+        width: 100%;
+        font-size: 11px;
+    }
+    
+    .resume-section {
+        width: 100%;    
+    }
+    
+    p.resume-content{
+        font-size: 15px;
+    }
+    
+    .right {
+        font-size: 10px;
+        padding-right: 0%;
+    }
+    
+    .course {
+        font-size: 12px; 
+    }
+    
+    .description {
+        font-size: 13px;
+        padding-right: 0%;
+    }
+    
+    .skill {
+        margin-right: 5px;
+        font-size: 8px;
+        padding: 5px 5px;
+    }
+    
+    a.block-btn {
+        padding: 25px;
+    }
+    
+    .block-btn {
+        min-height: 40px;
+        font-size: 0.8em;
+    }
+    
+    .project-section {
+        width: 100%;    
+    }
+    
+    p.project-content {
+        font-size: 15px;
+    }
+    
+    .contact-section {
+        width: 100%; 
+    }
+    
+    .copyright-wrapper {
+        margin-top: 70px;
+        font-size: 10px;
+        font-weight: 200;
     }
 
 }

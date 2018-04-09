@@ -1,5 +1,5 @@
 $(function() {
-    var navOffset = $(".background1").offset().top - 1;
+    var navOffset = $("#about").offset().top - 1;
     
     $(document).on('scroll', function() {
         var scrollTop = $(document).scrollTop();
